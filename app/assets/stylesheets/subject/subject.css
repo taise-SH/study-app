@@ -1,0 +1,51 @@
+.subjects-choice{
+  display: flex;
+  justify-content: center;
+}
+
+.subjects-choice-box {
+  font-size: 50px;
+  background-color: #f5f5f5;
+  flex-direction: column;
+  text-align: center;
+  padding: 70px;
+
+}
+
+.english-box{
+  width: 500px;
+  border: 1px solid #000066;
+  margin: 20px;
+}
+
+.math-box{
+  width: 500px;
+  border: 1px solid #000066;
+  margin: 20px;
+}
+
+.japanese-box{
+  width: 500px;
+  border: 1px solid #000066;
+  margin: 20px;
+}
+
+.science-box{
+  width: 500px;
+  border: 1px solid #000066;
+  margin: 20px;
+}
+
+.society-box{
+  width: 500px;
+  border: 1px solid #000066;
+  margin: 20px;
+}
+
+
+
+
+
+
+
+

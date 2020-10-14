@@ -1,0 +1,26 @@
+.user_name_info{
+  display: flex;
+  width: 660px;
+}
+
+.user_nickname{
+  display: flex;
+  align-items: center;
+  width: 500px;
+  font-size: 20px;
+}
+
+.user-info-btn{
+  padding-top: 10px;
+  width: 260px;
+  height: 40px;
+}
+
+.myself{
+  font-size: 20px;
+}
+
+.logout-btn{
+  font-size: 20px;
+  margin-left: 7px;
+}

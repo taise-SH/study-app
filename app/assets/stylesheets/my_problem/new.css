@@ -1,0 +1,51 @@
+.self-problem{
+  display: flex;
+  justify-content: center;
+}
+
+.self-problem-one{
+  background-color: rgb(246, 252, 255);
+  display: flex;
+  justify-content: center;
+  width: 660px;
+}
+
+.self-question{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 600px;
+  height: 300px;
+}
+
+.figure{
+  width: 600px;
+}
+
+form input{
+  width: 100%;
+  margin-top: 5px ;
+  padding: 10px;
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+  font-family: "游ゴシック", "YuGothic";
+}
+
+.figure-comment{
+  font-size: 15px;
+  color: red;
+}
+
+.self-problem-answer{
+  margin-top: 10px;
+}
+
+.input{
+  display: flex;
+  justify-content: center;
+}
+
+.self-problem-btn{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}

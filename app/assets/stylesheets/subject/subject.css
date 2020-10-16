@@ -9,7 +9,10 @@
   flex-direction: column;
   text-align: center;
   padding: 70px;
+}
 
+div.subjects-choice-box:hover{
+  color: #58d0ff;
 }
 
 .english-box{
@@ -41,6 +44,37 @@
   border: 1px solid #000066;
   margin: 20px;
 }
+
+.self-made-problem-box{
+  width: 500px;
+  border: 1px solid #000066;
+  margin: 20px;
+}
+
+.self-made-problem-btn{
+  width: 150px;
+  height: 130px;
+  background: #3ccace;
+  text-align: center;
+  border-radius: 4%;
+  bottom: 32px;
+  right: 32px;
+  position: fixed;
+  padding: 15px;
+}
+
+.self-msde-problem-btn-text{
+  color: #fff;
+  display: block;
+  font-size: 30px;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+a:hover{
+  color: rgb(22, 65, 185);
+}
+
 
 
 

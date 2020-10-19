@@ -8,7 +8,13 @@
       <%= f.file_field :image, class: "figure", placeholder: "図や図形、画像"%>
       <p class="figure-comment">※ 図や図形などの画像あれば載せてください</p>
       <%= f.text_field :answer, class: "self-problem-answer", placeholder: "答え"%>
-      <%= f.submit "作成する" ,class: "self-problem-btn"%>
+
+      <div class="proglem-btn-contents">
+        <%= f.submit "作成する" ,class: "self-problem-btn"%>
+        <div class="back-btn-contents">
+          <%= link_to "もどる", root_path, class:"back-btn" %>
+        </div>
+      </div>
 
     <% end %>
     </div>

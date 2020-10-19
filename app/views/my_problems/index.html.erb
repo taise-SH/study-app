@@ -1,0 +1,38 @@
+<%= render "shared/header" %>
+<div class="self-problems">
+  <div class="self-problem-two">
+    <div class="my_problem-ids">
+    <%#% <div class="test">テスト</div> %>
+      <% @problems.each do |problem| %>
+
+        <% if user_signed_in? && current_user.id == problem.user_id %>
+        <div class="my_problem-id">
+          <div class="my_problem-question">
+            <h1>問題 <%= problem.id %></h1>
+
+            <div class="my_problem-sentence-frame">
+              <div class="my_problem-sentence">
+                <%= problem.question %>
+                <% if problem.image.present? %>
+                  <%= image_tag problem.image, class: "problem-img" %>
+                <% end %>
+              </div>
+            </div>
+
+          </div>
+        
+          <div class="my_problem-answer-frame">
+            <textarea class="answer-box" placeholder="回答欄"></textarea>
+          </div>
+
+          <div class="my_problem-answer">
+            <p class="my_problem-answer-btn" id="my_problem-answer-btn">解答を表示する</p>
+            <div class="my_problem-answer-part hidden" id="my_problem-answer-id" ><%= problem.answer %></div>
+          </div>
+        </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
+

@@ -19,11 +19,11 @@
 }
 
 .figure{
+  background-color: rgb(255, 255, 255);
   width: 600px;
 }
 
 form input{
-  width: 100%;
   margin-top: 5px ;
   padding: 10px;
   border: 1px solid #D8D8D8;
@@ -37,6 +37,7 @@ form input{
 }
 
 .self-problem-answer{
+  width: 100%;
   margin-top: 10px;
 }
 
@@ -45,7 +46,35 @@ form input{
   justify-content: center;
 }
 
-.self-problem-btn{
+.proglem-btn-contents{
   margin-top: 50px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.self-prolem-btn{
+  font-size: 30px;
+  width: 330px;
+  height: 40px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.back-btn-contents{
+  display: flex;
+  justify-content: center;
+}
+
+.back-btn{
+  font-size: 20px;
+  background-color:  rgb(246, 252, 255);
+  border: 1px solid royalblue;
+  width: 330px;
+  height: 40px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

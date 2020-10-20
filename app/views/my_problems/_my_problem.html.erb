@@ -1,0 +1,25 @@
+
+  <div class="whole">
+    <div class="individual">
+
+      <div class="individual-id">
+        <div class="my_page-question">
+        <h1 class="my_page-question-letter">問題 <%= my_problem.id %><span class="edit-destroy">▼</span></h1>
+        <%= my_problem.question %>
+
+          <% if my_problem.image.present? %>
+            <div class="my_page-image">
+            <%= image_tag my_problem.image %>
+            </div>
+          <% end %>
+
+          <div class="my_page-answer">
+          <br><b class="answer-letter">解答</b>
+            <br><%= my_problem.answer%>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>

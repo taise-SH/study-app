@@ -1,0 +1,38 @@
+.whole{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: rgb(235, 243, 255);
+}
+
+.individual-id{
+  width: 500px;
+  height: 500px;
+  border: 2px solid rgb(69, 126, 233);
+  margin: 10px 0px;
+  background-color: white;
+  overflow: scroll;
+}
+
+.my_page-question{
+  padding: 15px;
+  padding-right: 30px;
+}
+
+.my_page-question-letter{
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-destroy{
+  color: rgb(0, 255, 136);
+}
+
+.my_page-image{
+  padding-top: 10px;
+}
+
+.answer-letter{
+  color: rgb(0, 0, 0);
+}
+

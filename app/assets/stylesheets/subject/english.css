@@ -1,0 +1,12 @@
+.question-collection{
+  display: flex;
+  justify-content: center;
+}
+
+.question-collecter{
+  background-color: rgb(246, 252, 255);
+  display: flex;
+  justify-content: center;
+  width: 660px;
+  /*height: 10000px;*/
+}

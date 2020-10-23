@@ -1,23 +1,41 @@
-function answer () {
+function answer() {
 
-  const answerIndexButton = document.getElementById("my_problem-answer-btn")
-  const answerIndexButtons = document.getElementById("my_problem-answer-id")
+  const answerButton = document.getElementById("my_problem-answer-btn")
+  const answerIndex = document.getElementById("my_problem-answer-id")
+  ///const answerButtons = document.querySelectorAll("my_problem-answer-btn")
+  ///const amswerIndexs = document.querySelectorAll("my_problem-answer-id")
+  //let answerIndexButtons = answerButtons.childElementCount;
+  //const answerIndexs = answerIndex.childElementCount;
 
-  answerIndexButton.addEventListener('mouseover', function(){
-    answerIndexButton.setAttribute("style", "background-color: rgb(151, 205, 253);")
-  })
+  //let answerLength = 0;
+  //while (answerLength < answerIndexButtons){
+  ///answerIndexButtons.forEach(function(answers){
+    answerButton.addEventListener('mouseover', function(){
+      answerButton.setAttribute("style", "background-color: rgb(151, 205, 253);")
+    })
+  
+    //answerButton.addEventListener('mouseover', function(){
+    //  answerButton.setAttribute("style", "background-color: rgb(151, 205, 253);")
+    //})
 
-  answerIndexButton.addEventListener('mouseout', function(){
-    answerIndexButton.removeAttribute("style", "background-color: rgb(151, 205, 253);")
-  })
+    answerButton.addEventListener('mouseout', function(){
+      answerButton.removeAttribute("style", "background-color: rgb(151, 205, 253);")
+    })
+  ///})
+  //  answerLength++;
+  //}
 
-  answerIndexButton.addEventListener('click', function(){
-    if (answerIndexButtons.getAttribute("style") == "display:block;") {
-      answerIndexButtons.removeAttribute("style", "display:block;")
-    } else {
-      answerIndexButtons.setAttribute("style", "display:block;")
-    }
-  })
+    answerButton.addEventListener('click', function(){
+      if (answerIndex.getAttribute("style") == "display:block;") {
+        answerIndex.removeAttribute("style", "display:block;")
+      } else {
+        answerIndex.setAttribute("style", "display:block;")
+      }
+    })
+  
+    //answerButtons.forEach()
+  //  answerLength++;
+  //}
 }
 
 window.addEventListener("load", answer);

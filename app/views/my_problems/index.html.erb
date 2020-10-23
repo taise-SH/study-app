@@ -25,9 +25,12 @@
             <textarea class="answer-box" placeholder="回答欄"></textarea>
           </div>
 
-          <div class="my_problem-answer">
-            <p class="my_problem-answer-btn" id="my_problem-answer-btn">解答を表示する</p>
-            <div class="my_problem-answer-part hidden" id="my_problem-answer-id"><%= problem.answer %></div>
+          <div class="my_problem-answer" id="my_problem-answer-ids">
+              <a class="my_problem-answer-btn" id="my_problem-answer-btn">解答を表示する</a>
+
+            <div class="my_problem-answer-part1 hidden" id="my_problem-answer-id">
+              <div class="my_problem-answer-part" ><%= problem.answer %></div>
+            </div>
           </div>
         </div>
         <% end %>

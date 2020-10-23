@@ -17,7 +17,7 @@ Study-training
   
 ### 問題作成機能  
 問題に画像も載せることができるようにしました。
-![](./)
+![problem](./images/problem-Videotogif 2.gif)
   
 ### 問題を解く機能
 ここの機能に関しては、Javacriptで回答を表示させています

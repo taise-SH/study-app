@@ -2,11 +2,9 @@
 <div class="subjects-choice">
   <div class="subjects-choice-box">
 
-    <%#= form_with id: 'charge-form', class: 'transaction-form-wrap', local: true do |f| %>
     <div class="english-box">
-      <%= link_to "English", "#" ,class: "english"%>
+      <%= link_to "英語", "#" ,class: "english"%>
     </div>
-    <%#end%>
 
     <div class="math-box">
       <%= link_to "数学", "#", class: "math"%>
@@ -23,5 +21,13 @@
     <div class="society-box">
       <%= link_to "社会", "#", class: "society"%>
     </div>
+
+    <div class="self-made-problem-box">
+      <%= link_to "自作問題", my_problems_path ,class: "self-made-problem"%>
+    </div>
+  </div>
+
+  <div class="self-made-problem-btn">
+    <a href="/my_problems/new" class="self-msde-problem-btn-text">問題を作る</a>
   </div>
 </div>

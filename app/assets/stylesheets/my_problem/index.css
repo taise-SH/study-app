@@ -1,0 +1,66 @@
+.self-problems{
+  display: flex;
+  justify-content: center;
+}
+
+.self-problem-two{
+  background-color: rgb(246, 252, 255);
+  display: flex;
+  justify-content: center;
+  width: 660px;
+}
+
+.my_problem-ids{
+  padding: 20px;
+}
+
+.my_problem-id{
+  margin-bottom: 60px;
+}
+
+.my_problem-sentence-frame{
+  padding-top: 7px;
+}
+
+/*.my_problem-sentence{
+
+}*/
+
+.my_problem-answer-frame{
+  display: flex;
+  justify-content: center;
+  padding: 40px 10px 10px;
+}
+
+.answer-box{
+  width: 500px;
+  height: 56px;
+}
+
+.my_problem-answer{
+  margin-top: 20px;
+}
+
+.my_problem-answer-btn{
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  width: 147px;
+  height: 28px;
+  border: 1px solid rgb(36, 35, 35);
+  color: rgb(45, 45, 216);
+}
+
+.my_problem-answer-part{
+  margin-top: 10px;
+  color: rgb(45, 45, 216);
+}
+
+.hidden{
+  display: none;
+}
+
+/*.test{
+  color: rgb(151, 205, 253);
+}*/

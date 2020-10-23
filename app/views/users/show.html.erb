@@ -1,0 +1,8 @@
+<%= render "shared/header_my" %>
+  <div class="contents row">
+    <p><%= @nickname %>さんの投稿一覧</p>
+    <% @my_problem.each do |problem| %>
+      <%= render partial: "my_problems/my_problem", locals: { my_problem: problem } %>
+    <% end %>
+  </div>
+

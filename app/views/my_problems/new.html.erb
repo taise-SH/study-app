@@ -1,0 +1,22 @@
+<%= render "shared/header" %>
+<div class="self-problem">
+  <div class="self-problem-one">
+    <div class="self-problem-id">
+    <%= form_with model: @my_problem, local: true do |f| %>
+
+      <%= f.text_area :question, class: "self-question", placeholder: "問題文" %>
+      <%= f.file_field :image, class: "figure", placeholder: "図や図形、画像"%>
+      <p class="figure-comment">※ 図や図形などの画像あれば載せてください</p>
+      <%= f.text_field :answer, class: "self-problem-answer", placeholder: "答え"%>
+
+      <div class="proglem-btn-contents">
+        <%= f.submit "作成する" ,class: "self-problem-btn"%>
+        <div class="back-btn-contents">
+          <%= link_to "もどる", root_path, class:"back-btn" %>
+        </div>
+      </div>
+
+    <% end %>
+    </div>
+  </div>
+</div>

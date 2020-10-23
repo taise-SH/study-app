@@ -1,0 +1,80 @@
+.self-problem{
+  display: flex;
+  justify-content: center;
+}
+
+.self-problem-one{
+  background-color: rgb(246, 252, 255);
+  display: flex;
+  justify-content: center;
+  width: 660px;
+}
+
+.self-question{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 600px;
+  height: 300px;
+}
+
+.figure{
+  background-color: rgb(255, 255, 255);
+  width: 600px;
+}
+
+form input{
+  margin-top: 5px ;
+  padding: 10px;
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+  font-family: "游ゴシック", "YuGothic";
+}
+
+.figure-comment{
+  font-size: 15px;
+  color: red;
+}
+
+.self-problem-answer{
+  width: 100%;
+  margin-top: 10px;
+}
+
+.input{
+  display: flex;
+  justify-content: center;
+}
+
+.proglem-btn-contents{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.self-prolem-btn{
+  font-size: 30px;
+  width: 330px;
+  height: 40px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.back-btn-contents{
+  display: flex;
+  justify-content: center;
+}
+
+.back-btn{
+  font-size: 20px;
+  background-color:  rgb(246, 252, 255);
+  border: 1px solid royalblue;
+  width: 330px;
+  height: 40px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

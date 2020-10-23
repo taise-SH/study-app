@@ -1,5 +1,7 @@
 class MyProblemsController < ApplicationController
+  before_action :authenticate_user!
   before_action :problem_params_id, only: [:edit, :update, :destroy]
+
 
   def index
     @problems = MyProblem.all
@@ -49,6 +51,11 @@ class MyProblemsController < ApplicationController
 
   def problem_params_id
     @my_problem = MyProblem.find(params[:id])
+  end
+
+  def not_transition
+    problem = MyProblem.find(params[:id])
+    redirect_to root_path if current_user && problem.user_id == current_user.id
   end
 end
 

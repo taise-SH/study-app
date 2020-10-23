@@ -1,0 +1,18 @@
+<%= render "shared/header" %>
+<div class="question-collection">
+  <div class="question-collecter">
+    <div class="question-id">
+    <%= @titl %>
+    <% @titl.each do |titls| %>
+      <%= titls.question %>
+    <% end %>
+
+      <div class="naswer_column">
+      <%#= form_with model: @question, local: true do |t| %>
+        <p>回答欄</p>
+        <>
+      <%# end %>
+      </div>
+    </div>
+  </div>
+</div>

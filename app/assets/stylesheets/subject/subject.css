@@ -5,7 +5,7 @@
 
 .subjects-choice-box {
   font-size: 50px;
-  background-color: #f5f5f5;
+  /*background-color: #f5f5f5;*/
   flex-direction: column;
   text-align: center;
   padding: 70px;
@@ -17,36 +17,42 @@ div.subjects-choice-box:hover{
 
 .english-box{
   width: 500px;
+  background-color: white;
   border: 1px solid #000066;
   margin: 20px;
 }
 
 .math-box{
   width: 500px;
+  background-color: white;
   border: 1px solid #000066;
   margin: 20px;
 }
 
 .japanese-box{
   width: 500px;
+  background-color: white;
   border: 1px solid #000066;
   margin: 20px;
 }
 
 .science-box{
   width: 500px;
+  background-color: white;
   border: 1px solid #000066;
   margin: 20px;
 }
 
 .society-box{
   width: 500px;
+  background-color: white;
   border: 1px solid #000066;
   margin: 20px;
 }
 
 .self-made-problem-box{
   width: 500px;
+  background-color: white;
   border: 1px solid #000066;
   margin: 20px;
 }

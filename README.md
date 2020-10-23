@@ -20,15 +20,15 @@ Study-training
 ![](./app/assets/images/Videotogif 2.gif)
   
 ### 問題を解く機能
-ここの機能に関しては、Javacriptで回答を表示させています
+ここの機能に関しては、Javacriptで回答を表示させています  
 ![](./app/assets/images/problem-Videotogif 2.gif)
   
 ### 問題の編集と削除
-問題の編集と削除は、マイページから自分が作成した問題の一覧が表示されるのでそこの「 編集 」というリンクからできます
+問題の編集と削除は、マイページから自分が作成した問題の一覧が表示されるのでそこの「 編集 」というリンクからできます。  
 ![](./app/assets/images/edit-delete-Videotogif 2.gif)
   
 ### ユーザー管理機能
-ログインや新規登録をおこないます。ログインしていない状態で他のページにいこうとすると　にとばされます
+ログインや新規登録をおこないます。ログインしていない状態で他のページにいこうとするとログインページに移動します。  
 ![](./app/assets/images/ori-app-user-Videotogif 2.gif)
   
 ## 実装予定の内容

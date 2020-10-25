@@ -1,0 +1,10 @@
+.root-btn{
+  margin-top: 5px;
+  width: 86px;
+  height: 46px;
+  align-items: center;
+}
+
+.root-btn:hover{
+  background-color: #84d3ef;
+}

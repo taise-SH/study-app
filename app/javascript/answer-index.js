@@ -1,4 +1,4 @@
-function answer() {
+/*function answer() {
 
   const answerButton = document.getElementById("my_problem-answer-btn")
   const answerIndex = document.getElementById("my_problem-answer-id")
@@ -38,4 +38,4 @@ function answer() {
   //}
 }
 
-window.addEventListener("load", answer);
+window.addEventListener("load", answer);*/

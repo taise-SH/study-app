@@ -8,7 +8,7 @@
         <% if user_signed_in? && current_user.id == problem.user_id %>
         <div class="my_problem-id">
           <div class="my_problem-question">
-            <h1>問題 <%= problem.id %></h1>
+            <h1>問題 </h1>
 
             <div class="my_problem-sentence-frame">
               <div class="my_problem-sentence">
@@ -28,8 +28,8 @@
           <div class="my_problem-answer" id="my_problem-answer-ids">
               <a class="my_problem-answer-btn" id="my_problem-answer-btn">解答を表示する</a>
 
-            <div class="my_problem-answer-part1 hidden" id="my_problem-answer-id">
-              <div class="my_problem-answer-part" ><%= problem.answer %></div>
+            <div class="my_problem-answer-part1">
+              <div class="my_problem-answer-part hidden" id="my_problem-answer-id"><%= problem.answer %></div>
             </div>
           </div>
         </div>
@@ -38,4 +38,39 @@
     </div>
   </div>
 </div>
+
+<script>
+  let answerButton = document.getElementById("my_problem-answer-btn")
+  const answerIndex = document.getElementById("my_problem-answer-id")
+  ///const answerButton = document.querySelectorAll("my_problem-answer-btn")
+  ///const amswerIndex = document.querySelectorAll("my_problem-answer-id")
+  let answerIndexButtons = answerButton.length;
+  let answerIndexs = answerIndex.childElementCount;
+
+  //let answerLength = 0;
+  //while (answerLength === answerIndexButtons){
+  ///answerIndexButtons.forEach(function(answers){
+    answerButton.addEventListener('mouseover', function(){
+      answerButton.setAttribute("style", "background-color: rgb(151, 205, 253);")
+    })
+  
+    //answerButton.addEventListener('mouseover', function(){
+    //  answerButton.setAttribute("style", "background-color: rgb(151, 205, 253);")
+    //})
+
+    answerButton.addEventListener('mouseout', function(){
+      answerButton.removeAttribute("style", "background-color: rgb(151, 205, 253);")
+    })
+  ///})
+  //  answerLength++;
+  //}
+
+    answerButton.addEventListener('click', function(){
+      if (answerIndex.getAttribute("style") == "display:block;") {
+        answerIndex.removeAttribute("style", "display:block;")
+      } else {
+        answerIndex.setAttribute("style", "display:block;")
+      }
+    })
+</script>
 

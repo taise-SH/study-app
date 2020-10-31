@@ -4,4 +4,12 @@ class MyProblem < ApplicationRecord
 
   validates :question, presence: true
   validates :answer, presence: true
+
+  def self.search(search)
+    if search != ""
+      MyProblem.where('question LIKE(?)', "%#{search}%")
+    else
+      MyProblem.all
+    end
+  end
 end

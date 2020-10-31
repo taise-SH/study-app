@@ -43,6 +43,10 @@ class MyProblemsController < ApplicationController
     end
   end
 
+  def search
+    @my_problem = MyProblem.search(params[:keyword])
+  end
+
   private
 
   def problem_params

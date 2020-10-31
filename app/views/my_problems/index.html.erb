@@ -42,7 +42,7 @@
 
 <script>
   let answerButton = document.getElementById("my_problem-answer-btn")
-  const answerIndex = document.getElementById("my_problem-answer-id")
+  let answerIndex = document.getElementById("my_problem-answer-id")
   ///const answerButton = document.querySelectorAll("my_problem-answer-btn")
   ///const amswerIndex = document.querySelectorAll("my_problem-answer-id")
   let answerIndexButtons = answerButton.length;
@@ -62,16 +62,16 @@
     answerButton.addEventListener('mouseout', function(){
       answerButton.removeAttribute("style", "background-color: rgb(151, 205, 253);")
     })
-  ///})
-  //  answerLength++;
-  //}
 
-    answerButton.addEventListener('click', function(){
+        answerButton.addEventListener('click', function(){
       if (answerIndex.getAttribute("style") == "display:block;") {
         answerIndex.removeAttribute("style", "display:block;")
       } else {
         answerIndex.setAttribute("style", "display:block;")
       }
     })
+  ///})
+  //  answerLength++;
+  //}
 </script>
 

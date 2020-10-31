@@ -261,7 +261,7 @@ button,
 input,
 select,
 textarea {
-  display: flex;
+  /*display: flex;*/
   justify-content: center;
   font-family: inherit;
   /* 1 */
@@ -1076,6 +1076,7 @@ footer p {
 .search-form {
   text-align: center;
   padding-top: 32px;
+  margin-bottom: 20px;
 }
 
 .search-form .search-input {

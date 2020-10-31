@@ -1,10 +1,10 @@
-<%= render "shared/header_my_problem" %>
+<%= render "shared/header_back_none" %>
 <%= render "shared/search" %>
 <div class="self-problems">
   <div class="self-problem-two">
     <div class="my_problem-ids">
     <%#% <div class="test">テスト</div> %>
-      <% @problems.each do |problem| %>
+      <% @my_problem.each do |problem| %>
 
         <% if user_signed_in? && current_user.id == problem.user_id %>
         <div class="my_problem-id">
@@ -32,6 +32,9 @@
             <div class="my_problem-answer-part1">
               <div class="my_problem-answer-part hidden" id="my_problem-answer-id"><%= problem.answer %></div>
             </div>
+          </div>
+          <div class="top2-btn-box">
+            <%= link_to "もどる", my_problems_path, class: "top2-btn" %>
           </div>
         </div>
         <% end %>
@@ -74,4 +77,3 @@
       }
     })
 </script>
-

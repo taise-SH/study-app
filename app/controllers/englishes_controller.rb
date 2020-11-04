@@ -1,7 +1,9 @@
 class EnglishesController < ApplicationController
 
   def index
-    @titl = English.select(:question)
+    @english = English.all
   end
+
+
 
 end

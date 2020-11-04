@@ -35,8 +35,6 @@ ActiveRecord::Schema.define(version: 2020_10_16_080337) do
 
   create_table "englishes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "question"
-    t.text "image"
-    t.text "commentary"
     t.string "answer"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

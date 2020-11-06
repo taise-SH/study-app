@@ -1,11 +1,10 @@
 <%= render "shared/header_my_problem" %>
-<%#= render "shared/search" %>
+<%= render "shared/search" %>
 <div class="self-problems">
   <div class="self-problem-two">
     <div class="my_problem-ids">
-    <%#% <div class="test">テスト</div> %>
-      <% @english.each do |e| %>
 
+      <% @english.each do |e| %>
         <% if user_signed_in? && current_user.id == e.user_id %>
           <div class="my_problem-question">
             <h1>問題 </h1>
@@ -13,9 +12,6 @@
             <div class="my_problem-sentence-frame">
               <div class="my_problem-sentence">
                 <%= e.question %>
-                <% if e.image.present? %>
-                  <%= image_tag e.image, class: "problem-img" %>
-                <% end %>
               </div>
             </div>
 
@@ -32,7 +28,7 @@
               <div class="my_problem-answer-part hidden" id="my_problem-answer-id"><%= e.answer %></div>
             </div>
           </div>
-        </div>
+        
         <% end %>
       <% end %>
     </div>

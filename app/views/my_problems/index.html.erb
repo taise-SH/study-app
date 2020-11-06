@@ -5,7 +5,7 @@
     <div class="my_problem-ids">
     <%#% <div class="test">テスト</div> %>
       <% @problems.each do |problem| %>
-
+      
         <% if user_signed_in? && current_user.id == problem.user_id %>
         <div class="my_problem-id">
           <div class="my_problem-question">

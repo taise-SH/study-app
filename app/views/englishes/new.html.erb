@@ -1,0 +1,20 @@
+<%= render "shared/header" %>
+<div class="self-problem">
+  <div class="self-problem-english">
+    <div class="self-problem-id">
+    <%= form_with model: @english, local: true do |e| %>
+
+      <%= e.text_area :question, class: "self-question", placeholder: "問題文" %>
+      <%= e.text_field :answer, class: "self-problem-answer", placeholder: "答え"%>
+
+      <div class="proglem-btn-contents">
+        <%= e.submit "作成する" ,class: "self-problem-btn"%>
+        <div class="back-btn-contents">
+          <%= link_to "もどる", root_path, class:"back-btn" %>
+        </div>
+      </div>
+
+    <% end %>
+    </div>
+  </div>
+</div>

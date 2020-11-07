@@ -5,10 +5,11 @@
     <div class="self-made-problem-box">
       <%= link_to "自作問題", my_problems_path ,class: "self-made-problem"%>
     </div>
-  <%#
+
     <div class="english-box">
-      <%= link_to "英語", "#" ,class: "english"
+      <%= link_to "英単語", englishes_path ,class: "english" %>
     </div>
+  
   <%#
     <div class="math-box">
       <%= link_to "数学", "#", class: "math"
@@ -30,5 +31,8 @@
 
   <div class="self-made-problem-btn">
     <a href="/my_problems/new" class="self-msde-problem-btn-text">問題を作る</a>
+  </div>
+  <div class="self-made-problem-btn1">
+    <a href="/englishes/new" class="self-msde-problem-btn-text1">英単語集を作る</a>
   </div>
 </div>

@@ -3,20 +3,15 @@
 <div class="self-problems">
   <div class="self-problem-two">
     <div class="my_problem-ids">
-    <%#% <div class="test">テスト</div> %>
-      <% @problems.each do |problem| %>
-      
-        <% if user_signed_in? && current_user.id == problem.user_id %>
-        <div class="my_problem-id">
+
+      <% @english.each do |e| %>
+        <% if user_signed_in? && current_user.id == e.user_id %>
           <div class="my_problem-question">
             <h1>問題 </h1>
 
             <div class="my_problem-sentence-frame">
               <div class="my_problem-sentence">
-                <%= problem.question %>
-                <% if problem.image.present? %>
-                  <%= image_tag problem.image, class: "problem-img" %>
-                <% end %>
+                <%= e.question %>
               </div>
             </div>
 
@@ -30,10 +25,10 @@
               <a class="my_problem-answer-btn" id="my_problem-answer-btn">解答を表示する</a>
 
             <div class="my_problem-answer-part1">
-              <div class="my_problem-answer-part hidden" id="my_problem-answer-id"><%= problem.answer %></div>
+              <div class="my_problem-answer-part hidden" id="my_problem-answer-id"><%= e.answer %></div>
             </div>
           </div>
-        </div>
+        
         <% end %>
       <% end %>
     </div>
@@ -74,4 +69,3 @@
   //  answerLength++;
   //}
 </script>
-

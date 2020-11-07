@@ -10,3 +10,35 @@
   width: 660px;
   /*height: 10000px;*/
 }
+
+.self-made-problem-btn1{
+  width: 150px;
+  height: 130px;
+  background: #3ccace;
+  text-align: center;
+  border-radius: 4%;
+  bottom: 200px;
+  right: 32px;
+  position: fixed;
+  padding: 15px;
+}
+
+.self-msde-problem-btn-text1{
+  color: #fff;
+  display: block;
+  font-size: 25px;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+a:hover{
+  color: rgb(22, 65, 185);
+}
+
+.self-problem-english{
+  background-color: rgb(246, 252, 255);
+  display: flex;
+  justify-content: center;
+  width: 660px;
+  height: 600px;
+}

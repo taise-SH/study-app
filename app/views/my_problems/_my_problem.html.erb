@@ -5,13 +5,11 @@
       <div class="individual-id">
         <div class="my_page-question">
         <h1 class="my_page-question-letter">問題 
-          <%# <span class="edit-destroy">▼ %>
-            <ul class="edit-btn">
-              <li class="edit-letter">
-                <%= link_to '編集する', edit_my_problem_path(my_problem.id), method: :get %>
-              </li>
-            </ul>
-          <%# </span> %>
+          <ul class="edit-btn">
+            <li class="edit-letter">
+              <%= link_to '編集する', edit_my_problem_path(my_problem.id), method: :get %>
+            </li>
+          </ul>
         </h1>
         <%= my_problem.question %>
 
